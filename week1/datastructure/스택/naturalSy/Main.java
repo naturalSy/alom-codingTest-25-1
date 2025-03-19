@@ -16,15 +16,15 @@ public class Main {
         StringTokenizer command;
 
         int count = Integer.parseInt(br.readLine());
-        Integer item;
+        Integer value;
 
         for (int i = 0; i < count; i++) {
             command = new StringTokenizer(br.readLine());
 
             switch (command.nextToken()){
                 case "push":
-                    item = Integer.parseInt(command.nextToken());
-                    stack.push(item);
+                    value = Integer.parseInt(command.nextToken());
+                    stack.push(value);
                     break;
                 case "pop":
                     sb.append(stack.isEmpty() ? -1 : stack.pop()).append("\n");
