@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        int N, back = 0, num;
+        int N, back = 0, number;
         //queue 메소드
         //add 와 offer
         //remove와 poll
@@ -24,8 +24,8 @@ public class Main {
             }//pop 가장 앞에 있는 정수 빼고 출력, 없으면 -1 출력
             else if(input.equals("pop")) {
                 try {
-                    num = queue.remove();
-                    sb.append(num).append("\n");
+                    number = queue.remove();
+                    sb.append(number).append("\n");
                     //비어있으면 back에 저장되어 있는 수 0으로 초기화
                     if(queue.isEmpty()) {
                         back = 0;
